@@ -3,5 +3,5 @@ abstract class Car {
   bool hasHorn;
 
   //an abstract class can also have implementation of function
-void test() => print('Car beeps!');
+void honk() => print('Car honks!');
 }
