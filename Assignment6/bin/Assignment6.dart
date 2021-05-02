@@ -5,9 +5,7 @@ void main(List<String> arguments) {
   var file = File(Directory.current.path + '/' + 'MyFile.txt');
 
   //Write to the file
-  var raf = file.openSync(mode: FileMode.write);
-  raf.writeStringSync('Hello World');
-  raf.closeSync();
+  file.writeAsStringSync('Hello World');
 
   //read file
   print('Reading...');
